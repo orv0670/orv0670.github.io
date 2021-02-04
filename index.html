@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b0b25c5466.js" crossorigin="anonymous"></script>
+    <title>My feed photo</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-light sticky-top bg-light">
+        <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i> My Feed Photo</a>
+        <ul class="nav">
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary btn-md btn-success" data-toggle="modal" data-target="#exampleModal">Crea un nuevo Post</button>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cogs"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Opcion</a>
+                    <a class="dropdown-item" href="#">Otra Opcion</a>
+                    <a class="dropdown-item" href="#">Alguna otra cosa</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--ventana modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <textarea class="form-control" aria-label="with textarea"></textarea>
+                    <i class="fas fa-camera-retro p-1 border rounded mt-1"></i>
+                    <i class="fas fa-map-marker-alt p-1 border rounded mt-1"></i>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success btn-sm">Publicar</button>
+            </div>
+            </div>
+        </div>
+    </div><!--fin de la ventana modal-->
+    <!--pills-->
+    <div class="container-fluid">
+        <!--nav pills-->
+        <ul class="nav nav-pills justify-content-center mt-4" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#home"><i class="fa fa-square" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#menu2"><i class="fa fa-th" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+        <!--tab panes-->
+        <div class="tab-content">
+            <div id="home" class="container-fluid tab-pane active"><br>
+                <div class="row justify-content-center">
+                    <div class="">
+                        <div class="card mx-auto custom-card" style="width: 70rem;">
+                            <div class="row post-header col-12 py-2 px-3">
+                                <div class="col-6 float-left"><h4>Mi primer post</h4></div>
+                                <div class="col-6 float-right text-right post-number"><h4>20/01/2021</h4></div>
+                            </div>
+                            <img class="card-img" src="https://picsum.photos/400/200" alt="card imagen cap">
+                            <div class="card-body px-3">
+                                <h5 class="card-title">1000 Likes</h5>
+                                <p class="card-text">Esta es mi primera foto del Feed. esto es una linea de comentario multiple para propositos de prueba. Estoy aprendiendo como programar de la mano de 4Geeks Academy.</p>
+                            </div>
+                            <div class="row post-header px-3 pb-3">
+                                <div class="col-1 float-left text-left"><i class="far fa-heart"></i></div>
+                                <div class="col-10 float-left text-left">comentario...</div>
+                                <div class="col-1 float-right text-right"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="card mx-auto custom-card mt-3">
+                            <div class="row post-header col-12 py-2 px-3">
+                                <div class="col-6 float-left"><h4>Mi segundo post</h4></div>
+                                <div class="col-6 float-right text-right post-number"><h4>15/01/2021</h4></div>
+                            </div>
+                            <img class="card-img" src="https://picsum.photos/500/200" alt="card imagen cap">
+                            <div class="card-body px-3">
+                                <h5 class="card-title">1000 Likes</h5>
+                                <p class="card-text">Este es el segundo comentario, de igual manera no hay mucho que explicar xD.</p>
+                            </div>
+                            <div class="row post-header px-3 pb-3">
+                                <div class="col-1 float-left text-left"><i class="far fa-heart"></i></div>
+                                <div class="col-10 float-left text-left">comentario...</div>
+                                <div class="col-1 float-right text-right"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="card mx-auto custom-card mt-3">
+                            <div class="row post-header col-12 py-2 px-3">
+                                <div class="col-6 float-left"><h4>Mi tercer post</h4></div>
+                                <div class="col-6 float-right text-right post-number"><h4>14/01/2021</h4></div>
+                            </div>
+                            <img class="card-img" src="https://picsum.photos/300/200" alt="card imagen cap">
+                            <div class="card-body px-3">
+                                <h5 class="card-title">1000 Likes</h5>
+                                <p class="card-text">El tercer comentario es igual de aburrido que los demas.</p>
+                            </div>
+                            <div class="row post-header px-3 pb-3">
+                                <div class="col-1 float-left text-left"><i class="far fa-heart"></i></div>
+                                <div class="col-10 float-left text-left">comentario...</div>
+                                <div class="col-1 float-right text-right"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="card mx-auto custom-card mt-3">
+                            <div class="row post-header col-12 py-2 px-3">
+                                <div class="col-6 float-left"><h4>Mi cuarto post</h4></div>
+                                <div class="col-6 float-right text-right post-number"><h4>20/01/2021</h4></div>
+                            </div>
+                            <img class="card-img" src="https://picsum.photos/600/200" alt="card imagen cap">
+                            <div class="card-body px-3">
+                                <h5 class="card-title">1000 Likes</h5>
+                                <p class="card-text">El cuarto comentario es el ultimo.</p>
+                            </div>
+                            <div class="row post-header px-3 pb-3">
+                                <div class="col-1 float-left text-left"><i class="far fa-heart"></i></div>
+                                <div class="col-10 float-left text-left">comentario...</div>
+                                <div class="col-1 float-right text-right"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu2" class="container-fluid tab-pane fade"><br>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 px-1 my-1">
+                        <img src="https://picsum.photos/400/200" alt="Card imagen cap" width="100%" height="350px">
+                    </div>
+                     <div class="col-md-4 col-sm-6 px-1 my-1">
+                        <img src="https://picsum.photos/500/200" alt="Card imagen cap" width="100%" height="350px">
+                    </div>
+                     <div class="col-md-4 col-sm-6 px-1 my-1">
+                        <img src="https://picsum.photos/300/200" alt="Card imagen cap" width="100%" height="350px">
+                    </div>
+                     <div class="col-md-4 col-sm-6 px-1 my-1">
+                        <img src="https://picsum.photos/600/200" alt="Card imagen cap" width="100%" height="350px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
